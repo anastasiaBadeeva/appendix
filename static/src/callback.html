@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<script>
+		let hash = window.location.hash;
+		const appUrl = window.location.hostname === "localhost"
+			? 'http://localhost:8888'
+			: window.location.hostname === "account-dev.markerr.com"
+			? 'https://account-dev.markerr.com'
+			: 'https://account.markerr.com';
+			
+		let idxAccessToken = hash.indexOf('#access_token');
+		if (idxAccessToken >= 0) {
+			// has '#access_token' in URL
+			let at_str = hash.substring(idxAccessToken);
+			const access_token = at_str.substring(at_str.indexOf('=') + 1).trim();
+			if (access_token !== "") {
+				// we're good to go
+				window.location.href = appUrl + "/callback#access_token=" + access_token;
+			} else {
+				console.error('This page found an empty access_token in the location hash.');
+			}
+		} else if (hash.indexOf('#error') >= 0) {
+			setTimeout(() => window.location.href = appUrl, 30000);
+			console.error('something went wrong', hash);
+		} else {
+			console.error('This page expected an access_token in the location hash.')
+		}
+	</script>
+</html>

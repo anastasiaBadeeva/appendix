@@ -1,0 +1,181 @@
+{
+  "data": [
+
+    {
+      "label": "IncomeAndEmployment",
+      "title": "Income & Employment",
+      "text": "Payroll records from a top-3 payroll service provider.",
+      "types": [
+        {
+          "title": "Frequency",
+          "text": "Monthly"
+        },
+        {
+          "title": "Granularity",
+          "text": "Aggregate information by month, geography and industry"
+        },
+        {
+          "title": "History",
+          "text": "Since May 2008 for ZIP/market, January 2017 for block group/tract"
+        }
+      ],
+      "productSheetUrl" : "s3://mrkrr-datasets/payroll/metadata/Markerr_Income and Employment_Product Sheet.pdf",
+      "dataDictionaryUrl": "s3://mrkrr-datasets/payroll/metadata/Markerr Income and Employment Data.xlsx",
+      "rowSampleUrl": "s3://mrkrr-datasets/payroll/metadata/Markerr Income and Employment Data.xlsx"
+    },
+    {
+      "label": "JobPostings",
+      "title": "Job Postings",
+      "text": "Millions of job postings from hundreds of different portals and job placement sites.",
+      "types": [
+        {
+          "title": "Frequency",
+          "text": "Monthly"
+        },
+        {
+          "title": "Granularity",
+          "text": "MSA Level"
+        },
+        {
+          "title": "History",
+          "text": "Since 2018"
+        }
+      ],
+      "productSheetUrl" : "s3://mrkrr-datasets/job_postings/metadata/Markerr_Job Postings_Product Sheet.pdf",
+      "dataDictionaryUrl": "s3://mrkrr-datasets/job_postings/metadata/Markerr Job Postings Data.xlsx",
+      "rowSampleUrl": "s3://mrkrr-datasets/job_postings/metadata/Markerr Job Postings Data.xlsx"
+    },
+    {
+      "label": "HousingPermits",
+      "title": "Housing Permits",
+      "text": "Collection and aggregation of publicly available permit data at the local jurisdiction level.",
+      "types": [
+        {
+          "title": "Frequency",
+          "text": "Bi-weekly"
+        },
+        {
+          "title": "Granularity",
+          "text": "Permit quantity and dollar values, by week and month, by state"
+        },
+        {
+          "title": "History",
+          "text": "Since 2014"
+        }
+      ],
+      "productSheetUrl" : "s3://mrkrr-datasets/building_permits/metadata/Markerr_Housing Permits_Product Sheet.pdf",
+      "dataDictionaryUrl": "s3://mrkrr-datasets/building_permits/metadata/Markerr Housing Permits Data.xlsx",
+      "rowSampleUrl": "s3://mrkrr-datasets/building_permits/metadata/Markerr Housing Permits Data.xlsx"
+    },
+    {
+      "label": "ConsumerSpend",
+      "title": "Consumer Spend",
+      "text": "Consumer spending data comes from a representative panel of over 40 million consumer credit cards sampled from 95% of active cards in the United States..",
+      "types": [
+        {
+          "title": "Frequency",
+          "text": "Bi-weekly"
+        },
+        {
+          "title": "Granularity",
+          "text": "ZIP Code"
+        },
+        {
+          "title": "History",
+          "text": "Since 2018"
+        }
+      ],
+      "productSheetUrl" : "s3://mrkrr-datasets/consumer_spending/metadata/Markerr_Consumer Spending_Product Sheet.pdf",
+      "dataDictionaryUrl": "s3://mrkrr-datasets/consumer_spending/metadata/Markerr Consumer Spend Data.xlsx",
+      "rowSampleUrl": "s3://mrkrr-datasets/consumer_spending/metadata/Markerr Consumer Spend Data.xlsx"
+    },
+    {
+      "label": "RentalRates",
+      "title": "Rental Rates",
+      "text": "Provides rentatl rates for 49 million transactions across 160,000 distinct properties in more than 7,000 ZIP Codes from a leading real estate database company.",
+      "types": [
+        {
+          "title": "Frequency",
+          "text": "Monthly"
+        },
+        {
+          "title": "Granularity",
+          "text": "ZIP Code"
+        },
+        {
+          "title": "History",
+          "text": "Since 2018"
+        }
+      ],
+      "productSheetUrl" : "s3://mrkrr-datasets/rental_rates/metadata/Markerr_Rental Rate_Product Sheet.pdf",
+      "dataDictionaryUrl": "s3://mrkrr-datasets/rental_rates/metadata/Markerr Rental Rate Data.xlsx",
+      "rowSampleUrl": "s3://mrkrr-datasets/rental_rates/metadata/Markerr Rental Rate Data.xlsx"
+    },
+    {
+      "label": "TruckingRoutes",
+      "title": "Trucking Routes",
+      "text": "Geolocation data set with latitude and longitude coordinates collected on a minute-by-minute basis for approximately 500,000 US-based trucks.",
+      "types": [
+        {
+          "title": "Frequency",
+          "text": "Weekly"
+        },
+        {
+          "title": "Granularity",
+          "text": "15-minute Intervals"
+        },
+        {
+          "title": "History",
+          "text": "Since 2018"
+        }
+      ],
+      "productSheetUrl" : "s3://mrkrr-datasets/trucking/metadata/Markerr_Industrial Trucking Routes_Product Sheet.pdf",
+      "dataDictionaryUrl": "s3://mrkrr-datasets/trucking/metadata/Markerr Trucking Routes Data.xlsx",
+      "rowSampleUrl": "s3://mrkrr-datasets/trucking/metadata/Markerr Trucking Routes Data.xlsx"
+    },
+    {
+      "label": "IndustrialPois",
+      "title": "Industrial POIs",
+      "text": "Points of interest for shipping and delivery identified by lat/long coordinates enriched with mapped polygons and connected to relevant retailers.",
+      "types": [
+        {
+          "title": "Frequency",
+          "text": "Weekly"
+        },
+        {
+          "title": "Granularity",
+          "text": "WKT Polygons"
+        },
+        {
+          "title": "History",
+          "text": "Since 2018"
+        }
+      ],
+      "productSheetUrl" : "s3://mrkrr-datasets/trucking/metadata/Markerr_Industrial POI_Product Sheet.pdf",
+      "dataDictionaryUrl": "s3://mrkrr-datasets/trucking/metadata/Markerr Industrial POI Data.xlsx",
+      "rowSampleUrl": "s3://mrkrr-datasets/trucking/metadata/Markerr Industrial POI Data.xlsx"
+    },
+    {
+      "label": "Geosocial",
+      "title": "Geosocial",
+      "text": "Social media content (mostly text) produced by people on social platforms that is tied to a specific location. Sourced from every major social platform including Twitter, Instagram, Flickr, event platforms, review sites, etc.",
+      "types": [
+        {
+          "title": "Frequency",
+          "text": "Quarterly"
+        },
+        {
+          "title": "Granularity",
+          "text": "Aggregated ZIP Code and Census Block Group"
+        },
+        {
+          "title": "History",
+          "text": "Since 2017"
+        }
+      ],
+      "productSheetUrl" : "s3://mrkrr-datasets/geosocial/metadata/Markerr_Geosocial_Product Sheet.pdf",
+      "dataDictionaryUrl": "s3://mrkrr-datasets/geosocial/metadata/Markerr Geosocial Data.xlsx",
+      "rowSampleUrl": "s3://mrkrr-datasets/geosocial/metadata/Markerr Geosocial Data.xlsx"
+    }
+  ]
+}

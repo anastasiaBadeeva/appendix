@@ -1,0 +1,227 @@
+@import 'default';
+
+.home-screen {
+  & .header {
+    &-wrapper {
+      padding: 25px 130px 0 130px;
+    }
+    &-logo {
+      height: 40px;
+      &-title {
+        line-height: 23px;
+        font-size: 33px;
+      }
+    }
+    &-nav-wrapper {
+      margin-bottom: 30px;
+    }
+    &-nav {
+      & > div,
+      & a {
+        line-height: 20px;
+        font-size: 26px;
+      }
+    }
+    &-option-button {
+      line-height: 20px;
+      font-size: 30px;
+      height: 55px;
+      &:hover {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.header {
+  &-wrapper {
+    z-index: 1000;
+    background: $secondary-light-blue;
+    padding: 15px 130px 0 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  &-logo {
+    height: 25px;
+    &-title {
+      font-family: 'Work Sans', sans-serif;
+      letter-spacing: 5px;
+      font-weight: 500;
+      margin: 0 0 0 10px;
+      line-height: 14px;
+      font-size: 22px;
+      color: $primary-hague-blue;
+    }
+    &-wrapper {
+      align-items: flex-end;
+      display: flex;
+    }
+  }
+  
+  &-nav-wrapper {
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  &-nav {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 56px;
+    & a {
+      margin: 0;
+      line-height: 13px;
+      font-size: 17px;
+      cursor: pointer;
+      color: $neutrals-almost-black;
+      margin-left: 56px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:hover {
+        color:  $primary-cornflower-blue;
+      }
+    }
+  }
+  &-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &-button {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+  }
+
+  &-option-button {
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 11px;
+    font-size: 16px;
+    position: relative;
+    height: 36px;
+    background: transparent;
+    color: $primary-hague-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 3px $primary-hague-blue;
+    &:hover {
+      font-size: 18px;
+      color: white!important;
+      background: $primary-hague-blue;
+      box-shadow: 0 0 0 3px $primary-hague-blue;
+    }
+  }
+}
+  
+.dropdownOpen {
+  font-size: 18px;
+  color: white!important;
+  background: $primary-hague-blue;
+  box-shadow: 0 0 0 3px $primary-hague-blue;
+}
+  
+.selected {
+  color:  $primary-cornflower-blue !important;
+}
+
+@media (max-width: 1200px) {
+  .home-screen {
+    & .header {
+      &-wrapper {
+        padding: 25px 90px 0 90px;
+      }
+    }
+  }
+  .header {
+    &-wrapper {
+      padding: 15px 90px 0 90px;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .home-screen {
+    & .header {
+      &-wrapper {
+        padding: 25px 60px 0 60px;
+      }
+    }
+  }
+  .header {
+    &-wrapper {
+      padding: 15px 60px 0 60px;
+    }
+    &-nav {
+      margin-left: 25px;
+      & a {
+        margin-left: 25px;
+      }
+    }
+  }
+}
+@media (max-width: 870px) {
+  .home-screen .header-nav-wrapper {
+    margin-bottom: 25px;
+  }
+  .header {
+    &-nav {
+      &-wrapper {
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+      align-items: flex-start;
+      flex-direction: column;
+      & a {
+        margin-top: 10px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .home-screen {
+    & .header {
+      &-wrapper {
+        padding: 15px 40px 0 40px;
+      }
+    }
+  }
+  .header {
+    &-wrapper {
+      padding: 15px 40px 0 40px;
+    }
+    &-nav {
+      margin-left: 40px;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .home-screen .header-nav-wrapper {
+    margin-bottom: 15px;
+  }
+  .header {
+    &-nav {
+      margin-top: 10px;
+      &-wrapper {
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+    }
+    &-wrapper {
+      padding: 10px;
+    }
+    &-nav {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+---
+
+account_landing_static_build:
+  build:
+    image: account_landing_static_image
+    dockerfile_path: Dockerfile-static
+  encrypted_env_file: aws.env.encrypted
+account_landing_dev_static_build:
+  build:
+    image: account_landing_dev_static_image
+    dockerfile_path: Dockerfile-static-dev
+  encrypted_env_file: aws.env.encrypted

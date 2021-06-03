@@ -1,0 +1,72 @@
+{
+  "subMenu": {
+    "lastMile": [
+      {
+        "title": "Market Selection"
+      },
+      {
+        "title": "Consumer Spending Map"
+      },
+      {
+        "title": "Consumer Spending Analytics"
+      },
+      {
+        "title": "Labor Availability"
+      }
+    ],
+    "marketExploration": [
+      {
+        "title": "Market Exploration"
+      },
+      {
+        "title": "Market Similarity"
+      },
+      {
+        "title": "Dynamic Index"
+      },
+      {
+        "title": "Workforce"
+      },
+      {
+        "title": "Employer Performance"
+      },
+      {
+        "title": "Deal Scorecard"
+      },
+      {
+        "title": "MSA View"
+      }
+    ],
+    "crcForecast": [
+      {
+        "title": "MSA Forecast"
+      },
+      {
+        "title": "Zipcode Forecast"
+      },
+      {
+        "title": "Backtest"
+      }
+    ],
+    "propertyInsights": [
+      {
+        "title": "Overview"
+      },
+      {
+        "title": "Income"
+      },
+      {
+        "title": "Employment"
+      },
+      {
+        "title": "Demographics"
+      },
+      {
+        "title": "Housing"
+      },
+      {
+        "title": "Gentrification"
+      }
+    ]
+  }
+}

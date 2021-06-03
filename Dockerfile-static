@@ -1,0 +1,18 @@
+FROM node:10.15.3-stretch
+
+WORKDIR /opt/markerr
+ENV PYTHONPATH="/opt/markerr"
+
+RUN useradd -ms /bin/bash markerr
+
+RUN apt-get update && apt-get install -y python-pip python-dev && pip install awscli
+
+# copy source code
+COPY static /opt/markerr/static
+
+# build static
+RUN cd static && \
+  npm install && \
+  npm run build
+
+COPY deploy-to-s3.sh /opt/markerr/deploy-to-s3.sh

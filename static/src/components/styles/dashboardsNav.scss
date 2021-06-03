@@ -1,0 +1,110 @@
+.dashboards {
+  &-subnavbar {
+    display: none;
+    &-item {
+      &-title {
+        padding-left: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 15px;
+        font-family: 'Roboto Condensed', sans-serif;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+      &-selected {
+        font-weight: bold;
+      }
+    }
+  }
+  &-navbar {
+    z-index: 500;
+    background: #F2F2F2;
+    padding: 51px 10px 0 130px;
+    height: calc(100vh - 65px);
+    position: absolute;
+    left: -410px;
+    width: 410px;
+    transition: 0s;
+
+    &-item {
+      max-width: 270px;
+      &-status {
+        height: 16px;
+        min-width: 32px;
+        color: white;
+        background: $secondary-slate;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        padding: 0 4px;
+        font-size: 11px;
+        margin-left: 4px;
+      }
+      &-title {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        color: $primary-hague-blue;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding-bottom: 10px;
+      }
+      &-selected {
+        color: $primary-cornflower-blue !important;
+        box-shadow: 0 2px 0 0 $primary-cornflower-blue;
+      }
+    }
+  }
+}
+
+.show-subnavbar {
+  display: block;
+}
+.show-navbar {
+  position: relative;
+  left: 0;
+}
+@media (max-width: 1200px) {
+  .dashboards {
+    &-navbar {
+      height: calc(100vh - 65px);
+      padding: 51px 10px 0 90px;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .dashboards {
+    &-navbar {
+      height: calc(100vh - 65px);
+      padding: 51px 10px 0 60px;
+    }
+  }
+}
+@media (max-width: 870px) {
+  .dashboards {
+    &-navbar {
+      height: calc(100vh - 99px);
+    }
+  }
+}
+@media (max-width: 640px) {
+  .dashboards {
+    &-navbar {
+      padding: 51px 10px 0 40px;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .dashboards {
+    &-navbar {
+      height: calc(100vh - 124px);
+      padding: 51px 10px 0 10px;
+      width: 290px;
+    }
+  }
+}

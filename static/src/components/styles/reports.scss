@@ -1,0 +1,117 @@
+.reports {
+  &-wrapper {
+    padding: 0 35px 0 25px;
+    height: 30%;
+    &:first-child {
+      // height: 95px;
+      height: 20%;
+    }
+  }
+
+  &-item {
+    min-height: 525px;
+    box-shadow: 0 2px 4px -2px;
+    padding: 20px 0;
+    border-radius: 4px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    & img {
+      // height: 220px;
+      height: 40%;
+      width: 100%;
+    }
+    &-date {
+      margin-bottom: 10px;
+    }
+    &-title {
+      margin: 0;
+      line-height: 20px;
+      font-size: 20px;
+    }
+    &-subtitle {
+      margin: 10px 0 0 0;
+    }
+    &-date,
+    &-subtitle {
+      color: $secondary-slate;
+      font-weight: 500;
+      font-family: 'Roboto Condensed', sans-serif;
+      line-height: 10px;
+      font-size: 13px;
+    }
+    &-text {
+      font-family: 'Work Sans', sans-serif;
+      color: $neutrals-almost-black;
+      line-height: 20px;
+      margin-bottom: 30px;
+
+      &-title {
+        margin: 20px 0 0 0;
+        line-height: 20px;
+        font-size: 16px;
+      }
+    }
+    &-text-title,
+    &-title {
+      color: $neutrals-almost-black;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: bold;
+    }
+    &-link {
+      &-wrapper {
+        text-align: end;
+        margin-right: 25px;
+      }
+
+      color: $primary-cornflower-blue;
+      font-size: 17px;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        transition: 0.5s;
+        color: $primary-cornflower-blue;
+        font-size: 19px;
+      }
+
+      &-disabled {
+        cursor: auto;
+        color: $neutrals-almost-black;
+        &:hover {
+          font-size: 17px;
+          color: $neutrals-almost-black;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .reports {
+    &-item {
+      height: 550px;
+    }
+  }
+}
+@media (max-width: 915px) {
+  .reports {
+    & img {
+      height: 150px;
+    }
+    &-wrapper {
+      &:first-child {
+        height: 110px;
+      }
+    }
+    &-item {
+      height: 540px;
+      &-link {
+        &-wrapper {
+          margin-top: 30px;
+        }
+      }
+      &-text {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

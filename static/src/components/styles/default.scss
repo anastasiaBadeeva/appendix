@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+$primary-hague-blue: #274456;
+$primary-cornflower-blue: #7ba0c0;
+
+$secondary-slate: #93a1aa;
+$secondary-light-blue: #ddedf4;
+
+$neutrals-almost-black: #212121;
+$neutrals-grey: #b3b6ba;
+$neutrals-dark-grey: #7a7a7a;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  border: none;
+  background: none;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+  transition: 0.2s;
+}

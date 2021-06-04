@@ -7,36 +7,37 @@
 @import 'datasets';
 @import 'dashboards';
 @import 'dashboardsNav';
+@import 'appendix';
 
 .main-screen {
-  padding-top: 65px;
+ padding-top: 65px;
 }
 .home-screen {
-  padding-top: 95px;
+ padding-top: 95px;
 }
 .no-permission {
-  padding: 20px;
-  &-text {
-    font-family: "Work Sans", sans-serif;
-    font-size: 20px;
-  }
-  &-link {
-    color: #7BA0C0;
-  }
+ padding: 20px;
+ &-text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+ }
+ &-link {
+  color: #7ba0c0;
+ }
 }
 @media (max-width: 870px) {
-  .main-screen {
-    padding-top: 89px;
-  }
-  .home-screen {
-    padding-top: 130px;
-  }
+ .main-screen {
+  padding-top: 89px;
+ }
+ .home-screen {
+  padding-top: 130px;
+ }
 }
 @media (max-width: 560px) {
-  .main-screen {
-    padding-top: 114px;
-  }
-  .home-screen {
-    padding-top: 160px;
-  }
+ .main-screen {
+  padding-top: 114px;
+ }
+ .home-screen {
+  padding-top: 160px;
+ }
 }

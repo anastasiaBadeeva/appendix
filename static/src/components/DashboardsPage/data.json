@@ -1,0 +1,215 @@
+{
+    "dataSource":[
+        {
+            "label": "TruckingRoutes",
+            "title": "Trucking",
+            "text": "Geolocation data set with latitude and longitude coordinates collected on a minute-by-minute basis for approximately 500,000 US-based trucks"
+          },
+          {
+            "label": "RentalRates",
+            "title": "Rental Rate",
+            "text": "Provides rentatl rates for 49 million transactions across 160,000 distinct properties in more than 7,000 ZIP Codes from a leading real estate database company"
+          },
+         
+          {
+            "label": "IndustrialPois",
+            "title": "Industrial POIs",
+            "text": "Points of interest for shipping and delivery identified by lat/long coordinates enriched with mapped polygons and connected to relevant retailers."
+          },
+          {
+            "label": "HousingPermits",
+            "title": "Housing Permits",
+            "text": "Provides rentatl rates for 49 million transactions across 160,000 distinct properties in more than 7,000 ZIP Codes from a leading real estate database company"
+          },
+          {
+            "label": "ConsumerSpend",
+            "title": "Consumer Spending",
+            "text": "Consumer spending data comes from a representative panel of over 40 million consumer credit cards sampled from 95% of active cards in the United States."
+          },
+          {
+            "label": "Geosocial",
+            "title": "Geosocial",
+            "text": "Social media content (mostly text) produced by people on social platforms that is tied to a specific location. Sourced from every major social platform including Twitter, Instagram, Flickr, event platforms, review sites, etc."
+          },
+          {
+            "label": "IncomeAndEmployment",
+            "title": "Income & Employment",
+            "text": "Payroll records from a top-3 payroll service provider"
+          },
+          
+          {
+            "label": "JobPostings",
+            "title": "Job Postings",
+            "text": "Millions of job postings from hundreds of different portals and job placement sites"
+          }
+    ],
+    "income": [
+        {
+            "title": "Gross Income Per Capita",
+            "methodology": "10th, 25th, 50th, 75th, and 90th percentiles of Median Gross Income. Computed as a percentile for the target granularity relative to the submarket",
+            "dataSource": ["IncomeAndEmployment"],
+            "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+
+          },
+          {
+            "title": "Household Income",
+            "methodology": "20th, 40th, 60th, 80th, and 95th percentiles of Median Household Income. Computed as a percentile for the target granularity relative to the submarket",
+            "dataSource": ["IncomeAndEmployment"],
+            "granularity": ["circlePink"]
+          },
+          {
+            "title": "Savings Rate",
+            "methodology": "Mean per capita savings rate is computed as Median Net Income - Per Capita Credit & Debit Card Spending - Median Rent Price",
+            "dataSource": ["IncomeAndEmployment", "ConsumerSpend","RentalRates"],
+            "granularity": ["circlePurple"]
+            
+          },
+          {
+            "title": "Gross Income by Age",
+            "methodology": "Median gross income distribution by age",
+            "dataSource": ["IncomeAndEmployment"],
+            "categoryDetails": ["Silent Generation (Before 1945)", "Baby Boomers (1945 - 1964)", "Generation X (1965 - 1980)" , "Generation Y (after 1980)"],
+            "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+          }
+    ],
+    "housing": [
+      {
+          "title": "Rent to Income",
+          "methodology": "Computed as Median Rent / Median Gross Income",
+          "dataSource": ["IncomeAndEmployment","RentalRates"],
+          "granularity": ["circlePurple"]
+
+        },
+        {
+          "title": "Household Size",
+          "methodology": "The average number of people who occupy a housing unit as their primary place of residence",
+          "dataSource": ["IncomeAndEmployment"],
+          "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+        },
+        {
+          "title": "Household Formation Rate",
+          "methodology": "Year-over-year growth in the number of total households",
+          "dataSource": ["IncomeAndEmployment"],
+          "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+        },
+        {
+          "title": "Months Rent to Down Payment",
+          "methodology": "The average number of months of rent required to meet a 20% down payment in a given market",
+          "dataSource": ["RentalRates", "Zillow"],
+          "granularity": ["circlePurple"]
+        }
+  ],
+  "demographics": [
+    {
+        "title": "Population Growth",
+        "methodology": "Year-over-year growth in total population",
+        "dataSource": ["DemographicsAndPopulation"],
+        "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+
+      },
+      {
+        "title": "% Full Time vs Part Time",
+        "methodology": "Proportion of full time vs. part-time employees",
+        "dataSource": ["DemographicsAndPopulation"],
+        "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+      },
+      {
+        "title": "Marital Status",
+        "methodology": "Proportion of married, single, divorced, and widowed individuals",
+        "dataSource": ["DemographicsAndPopulation"],
+        "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+      },
+      {
+        "title": "Age Distribution",
+        "text":"Distribution of age buckets for the working population of each market computed for each geographic granularity sourced from Payroll Intelligence.",
+        "methodology": "Working population broken down by age",
+        "dataSource": ["IncomeAndEmployment"],
+        "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+      },
+      {
+        "title": "Education Distribution",
+        "methodology": "Distribution of educational attainment by the adult (18+) population",
+        "dataSource": ["DemographicsAndPopulation"],
+        "categoryDetails": ["High School Graduate or Higher", "Bachelor's Degree or Higher", "Advanced Degree"],
+        "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+      }
+
+],
+"employment": [
+  {
+      "title": "Professional Makeup",
+      "methodology": "The Top 10 sectors that people who live within a given market are employed in. Based on NAICS 2-digit sector codes. Percentage is computed as the number of employees within a sector divided by the total population of the market.",
+      "dataSource": ["IncomeAndEmployment"],
+      "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+
+    },
+    {
+      "title": "Industry Breakout",
+      "methodology": "Professional makeup which shows the percent of people employed within a given industry (NAICS6) for each market. Percentage is computed as the number of employees within an industry divided by the total population of the market.",
+      "dataSource": ["IncomeAndEmployment"],
+      "granularity": ["circlePurple"]
+    },
+    {
+      "title": "Growth in New Hiring",
+      "methodology": "Year-over-year growth in the number of newly hired employees across all sectors within a given geographic area.",
+      "dataSource": ["IncomeAndEmployment"],
+      "granularity": ["circlePurple"]
+    },
+    {
+      "title": "Top Recruiting Professions",
+      "methodology": "Top-five professions recruiting in the market. Computed as the sum of individual job postings for each unique profession as defined by O*NET codes.",
+      "dataSource": ["IncomeAndEmployment"],
+      "granularity": ["circleGreen"]
+    },
+    {
+      "title": "Top Recruiting Employers",
+      "methodology": "Top-five companies recruiting in the market. Computed as the sum of individual job postings for each unique employer.",
+      "dataSource": ["JobPostings"],
+      "granularity": ["circleGreen"]
+    }
+
+],
+"gentrification": [
+  {
+      "title": "Neighborhood Income Fit",
+      "text":"This plot shows how the relationship between these two variables changes over time and how the changing income dynamic may point towards gentrification within a neighborhood.",
+      "methodology": "Median gross Income percentile plotted against the percentile of the % of the population that earns over $100K. Percentiles are computed relative to the submarket",
+      "dataSource": ["IncomeAndEmployment"],
+      "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+
+    },
+    {
+      "title": "Gentrification Similarity",
+      "methodology": "A similarity score is computed for each zip code in the US to every other zip code based on metrics from input data sources. Similarities between zip codes are then computed for each month in the input data set.",
+      "dataSource": ["IncomeAndEmployment","Geosocial"],
+      "granularity": ["circlePurple"]
+    },
+    {
+      "title": "Income Distribution",
+      "methodology": "Distribution of the population which falls within pre-defined income bands shown as a percentage of the total working population.",
+      "dataSource": ["IncomeAndEmployment"],
+      "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+    },
+    {
+      "title": "Rent Growth",
+      "methodology": "Year-over-year growth in median rents for a given market.",
+      "dataSource": ["RentalRates"],
+      "granularity": ["circlePurple"]
+    },
+    {
+      "title": "Gen Y Income YoY",
+      "methodology": "Year-over-year growth in median income for those that fall within the Gen Y category (born after 1980).",
+      "dataSource": ["IncomeAndEmployment"],
+      "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+    },
+    {
+      "title": "Cultural Indicators",
+      "methodology": "Percentile rankings of the three geosocial indices that have shown the highest correlation to gentrification within a neighborhood. Percentiles are computed against the MSA.",
+      "dataSource": ["Geosocial"],
+      "granularity": ["circleGrapefruitPink","circleBlue","circleGreen","circlePink","circlePurple"]
+    }
+]
+
+
+
+}
